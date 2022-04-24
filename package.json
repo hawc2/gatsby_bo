@@ -1,24 +1,23 @@
 {
-  "name": "gatsby-theme-ceteicean",
-  "version": "2.2.0",
+  "name": "mith301-project",
+  "version": "1.0.0",
   "main": "index.js",
-  "author": "Raff Viglianti <raffaeleviglianti@gmail.com> (@raffazizzi)",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
+  "private": true,
   "dependencies": {
-    "@types/jsdom": "^16.2.13",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "clsx": "^1.1.1",
     "gatsby": "^3.3.1",
-    "gatsby-source-filesystem": "^3.3.0",
-    "gatsby-transformer-ceteicean": "^1.1.0",
+    "gatsby-plugin-material-ui": "^3.0.1",
+    "gatsby-theme-ceteicean": "^1.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-teirouter": "^2.1.0",
-    "xmldom": "^0.6.0"
+    "react-teirouter": "^2.0.4"
   },
   "devDependencies": {
-    "@types/node": "^14.14.41",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
-    "@types/xmldom": "^0.1.30",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
     "eslint": "^7.24.0",
@@ -28,7 +27,8 @@
     "typescript": "^4.2.4"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build-local": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "clean": "gatsby clean",
     "develop": "gatsby develop"
   }
