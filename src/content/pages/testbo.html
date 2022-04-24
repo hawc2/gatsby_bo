@@ -9,7 +9,7 @@
         <script src="CETEI.js"></script>
         <script>
             let c = new CETEI();
-            c.getHTML5('/tei/bo1.xml', function (data) {
+            c.getHTML5('bo1.xml', function (data) {
                 document.getElementsByTagName("body")[0].appendChild(data);
             });</script>
             <script src="https://www.verovio.org/javascript/latest/verovio-toolkit-wasm.js" defer></script>
