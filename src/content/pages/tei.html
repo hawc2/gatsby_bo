@@ -3,11 +3,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="src/static/tei.css">
-        <script src="src/static/CETEI.js"></script>
+        <link rel="stylesheet" href="./src/content/tei.css">
+        <script src="./src/content/CETEI.js"></script>
         <script>
             let c = new CETEI();
-            c.getHTML5('src/content/pages/tei/bo1.xml', function (data) {
+            c.getHTML5('./src/content/pages/tei/bo1.xml', function (data) {
                 document.getElementsByTagName("body")[0].appendChild(data);
             });</script>
             <script src="https://www.verovio.org/javascript/latest/verovio-toolkit-wasm.js" defer></script>
