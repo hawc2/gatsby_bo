@@ -1,7 +1,7 @@
 const basePath = '/gatsby_bo'
 
 module.exports = {
-  pathPrefix: basePath,
+  pathPrefix: "/gatsby_bo",
   siteMetadata: {
     title: `The Beggars Opera`,
     description: `A digital edition.`,
