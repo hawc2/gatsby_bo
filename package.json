@@ -34,5 +34,6 @@
     "build": "gatsby build --prefix-paths",
     "clean": "gatsby clean",
     "develop": "gatsby develop"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   }
 }
