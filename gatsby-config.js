@@ -17,6 +17,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-transformer-ceteicean`,
+      options: {
+        namespaces: {
+          "http://www.music-encoding.org/ns/mei": "mei",
+          "http://dita.​oasis-open.​org/​architecture/​2005/": "dita"
+        }
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `src/content/pages`,
