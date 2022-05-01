@@ -13,6 +13,5 @@
             c.getHTML5('./src/content/pages/tei/bo1.xml', function (data) {
                 document.getElementsByTagName("body")[0].appendChild(data);
             });</script>
-            <script src="https://www.verovio.org/javascript/latest/verovio-toolkit-wasm.js" defer></script>
         </p>
 </div>
