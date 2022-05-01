@@ -14,7 +14,6 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `src/content/tei`,
-      },
     },
     {
       resolve: `gatsby-transformer-ceteicean`,
@@ -23,13 +22,7 @@ module.exports = {
           "http://www.music-encoding.org/ns/mei": "mei"
         }
       }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `src/content/pages`,
-        name: `html`,
-      },
-    },
+    }
+   }
   ],
 }
