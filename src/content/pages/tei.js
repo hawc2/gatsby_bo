@@ -8,7 +8,6 @@
     </head>
     <h1>The Beggars Opera: A Digital Edition</h1>
         <p>
-        <script src="./src/content/CETEI.js"></script>
         <script>
             let c = new CETEI();
             c.getHTML5('./src/content/pages/tei/bo1.xml', function (data) {
