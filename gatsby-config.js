@@ -3,8 +3,8 @@ const basePath = '/gatsby_bo'
 module.exports = {
   pathPrefix: basePath,
   siteMetadata: {
-    title: `The Beggars Opera`,
-    description: `A digital edition.`,
+    title: `Beggars Opera`,
+    description: `A digital edition`,
     author: `Alex Wermer-Colan`
   },
   plugins: [
@@ -14,14 +14,15 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `src/content/tei`,
-    },
+      },
     },
     {
-      resolve: `gatsby-transformer-ceteicean`,
+      resolve: `gatsby-source-filesystem`,
       options: {
         namespaces: {
           "http://www.music-encoding.org/ns/mei": "mei"
         },
       },
+    },
   ],
 }
