@@ -16,13 +16,5 @@ module.exports = {
         path: `src/content/tei`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        namespaces: {
-          "http://www.music-encoding.org/ns/mei": "mei"
-        },
-      },
-    },
   ],
 }
