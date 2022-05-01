@@ -15,14 +15,13 @@ module.exports = {
       options: {
         path: `src/content/tei`,
     },
+    },
     {
       resolve: `gatsby-transformer-ceteicean`,
       options: {
         namespaces: {
           "http://www.music-encoding.org/ns/mei": "mei"
-        }
-      }
-    }
-   }
-  ]
+        },
+      },
+  ],
 }
