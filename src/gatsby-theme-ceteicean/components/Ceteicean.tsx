@@ -1,63 +1,64 @@
 import React from "react"
+import { IGatsbyImageData } from "gatsby-plugin-image"
+import { graphql, useStaticQuery } from "gatsby"
 import Ceteicean, {Routes} from "gatsby-theme-ceteicean/src/components/Ceteicean"
 import {
-  TeiHeader,
-  Ref,
   Tei,
-  Note,
-  Graphic
+  TeiHeader
 } from "gatsby-theme-ceteicean/src/components/DefaultBehaviors"
-
-import { makeStyles, Theme, createStyles, ThemeProvider } from '@material-ui/core/styles'
-import CssBaseline from "@material-ui/core/CssBaseline"
-import Paper from "@material-ui/core/Paper"
-
-import theme from "../../theme"
-
+import Pb from "./Pb"
 import Layout from "../../components/layout"
-import { Typography } from "@material-ui/core"
+import SEO from "../../components/seo"
+import Container from "@mui/material/Container"
 
-type Props = {
+interface Props {
   pageContext: {
     name: string
-    publicURL: string
     prefixed: string
     elements: string[]
   },
-  location: any
+  location: string
 }
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    original: {
-      padding: '.7em 0 0 1em'
-    }
-  })
-)
+export interface Fac {
+  name: string
+  childImageSharp: {
+    gatsbyImageData: IGatsbyImageData
+  }
+}
 
-export default function MicroEditionCeteicean({pageContext}: Props) {
-  const classes = useStyles()
+const EditionCeteicean = ({pageContext}: Props) => {
+
+  const queryData = useStaticQuery(graphql`
+  query general {
+    facs: allFile(filter: {relativeDirectory: {in: "facs"}}) {
+      nodes {
+        name
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+    }
+  }
+`)
+const facs: Fac[] = queryData.facs.nodes
 
   const routes: Routes = {
-    "tei-teiheader": TeiHeader,
-    "tei-ref": Ref,
     "tei-tei": Tei,
-    "tei-note": Note,
-    "tei-graphic": Graphic
+    "tei-teiheader": TeiHeader,
+    "tei-pb": (props) => <Pb facs={facs} {...props}/>,
   }
 
+  // Match the location to the TEI filename
   return(
-    <Layout location="TEI">
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
+    <Layout location="example">
+      <SEO title="Edition" />
+      <Container component="main" maxWidth="md">
         <Ceteicean pageContext={pageContext} routes={routes} />
-        <Paper elevation={1} className={classes.original}>
-          <Typography variant="body2">
-            <a href={pageContext.publicURL} download>See original TEI.</a>
-          </Typography>
-        </Paper>
-      </ThemeProvider>
+      </Container>
     </Layout>
   )
 
 }
+
+export default EditionCeteicean
