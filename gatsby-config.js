@@ -71,7 +71,7 @@ module.exports = {
         name: `Scholarly Editing`,
         short_name: `Scholarly Editing`,
         start_url: `/`,
-        icon: `src/images/gayportrait.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/se-icon.png`, // This path is relative to the root of the site.
       },
     },
   ],
