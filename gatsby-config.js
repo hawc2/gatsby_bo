@@ -34,7 +34,7 @@ module.exports = {
       },
       {
         name: 'edition',
-        link: '/example' // This needs to match the filename of the TEI
+        link: '/bo1' // This needs to match the filename of the TEI
       },
     ]
   },
