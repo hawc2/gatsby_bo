@@ -1,6 +1,6 @@
-const basePath = process.env.BASEPATH
+const basePath = "hawc2.github.io/gatsby_bo/"
 const title = "The Beggars Opera"
-const htmlTitle = "<em>The Beggars Opera</em>"
+const htmlTitle = "The Beggars Opera"
 
 module.exports = {
   pathPrefix: basePath,
