@@ -11,7 +11,7 @@ module.exports = {
       path: "path"
     },
     doi: '10.55520/FAKE',
-    group_order: 1, 
+    group_order: 1,
     title,
     htmlTitle,
     description: `A Scholarly Edition of. ${title}. Edited by Steve Newman, Fred Rowland, Alex Wermer-Colan.`,
@@ -63,12 +63,6 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `static/tei`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `static/svg`,
       },
     },
     {

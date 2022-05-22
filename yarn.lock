@@ -6269,7 +6269,7 @@
     "semver" "^7.3.5"
     "sharp" "^0.30.3"
 
-"gatsby-plugin-material-ui@4.1.0":
+"gatsby-plugin-material-ui@^4.1.0":
   "integrity" "sha512-g43jWiH/05tqdeCXVzPSe/L/98nPYfVANGmdilSTvfLshNPTppnls/Zs98TXmhbdHV/Bgov0hQsYIrBgcKWHbQ=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-material-ui/-/gatsby-plugin-material-ui-4.1.0.tgz"
   "version" "4.1.0"
