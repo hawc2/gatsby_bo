@@ -49,10 +49,9 @@ const facs: Fac[] = queryData.facs.nodes
     "tei-pb": (props) => <Pb facs={facs} {...props}/>,
   }
 
-  // Match the location to the TEI filename
   return(
-    <Layout location="example">
-      <SEO title="Edition" />
+    <Layout location="embedSVG_bo1">
+      <SEO title="Beggars Opera" />
       <Container component="main" maxWidth="md">
         <Ceteicean pageContext={pageContext} routes={routes} />
       </Container>
