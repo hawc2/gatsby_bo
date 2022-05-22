@@ -1,4 +1,4 @@
-const basePath = process.env.BASEPATH
+const basePath = "hawc2.github.io/gatsby_bo"
 const title = "The Beggars Opera"
 const htmlTitle = "The Beggars Opera"
 
@@ -11,7 +11,7 @@ module.exports = {
       path: "path"
     },
     doi: '10.55520/FAKE',
-    group_order: 1, // Oder of this micro-edition in the volume's micro-edition section.
+    group_order: 1, 
     title,
     htmlTitle,
     description: `A Scholarly Edition of. ${title}. Edited by Steve Newman, Fred Rowland, Alex Wermer-Colan.`,
