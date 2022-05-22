@@ -11,7 +11,7 @@ module.exports = {
       path: "path"
     },
     doi: '10.55520/FAKE',
-    group_order: 1, // Oder of this micro-edition in the volume's micro-edition section.
+    group_order: 1, 
     title,
     htmlTitle,
     description: `A Scholarly Edition of. ${title}. Edited by Steve Newman, Fred Rowland, Alex Wermer-Colan.`,
@@ -34,7 +34,7 @@ module.exports = {
       },
       {
         name: 'edition',
-        link: '/bo1' // This needs to match the filename of the TEI
+        link: '/bo1' 
       },
     ]
   },
@@ -71,7 +71,7 @@ module.exports = {
         name: `Scholarly Editing`,
         short_name: `Scholarly Editing`,
         start_url: `/`,
-        icon: `src/images/se-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/se-icon.png`, 
       },
     },
   ],
