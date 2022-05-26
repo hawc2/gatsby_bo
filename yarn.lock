@@ -6403,9 +6403,9 @@
     "node-fetch" "^2.6.7"
 
 "gatsby-theme-ceteicean@^3.0.0":
-  "integrity" "sha512-fOzFDGpxM/c0GZCtAa8Fd3ceNH8RCQLacvPKtCVnOtZZM0cDarizaXffK+72gT38myGiwEgJM5NXlvm7OmWcgw=="
-  "resolved" "https://registry.npmjs.org/gatsby-theme-ceteicean/-/gatsby-theme-ceteicean-3.1.0.tgz"
-  "version" "3.1.0"
+  "integrity" "sha512-cNSsy58ASFYPjpLiRYtKlUXoFA8VnUwgX6uhYFBO8SH4WmoVIZ4jc7XSSUrF8pV6Q2n+umCfurDj1LmCKE7VGA=="
+  "resolved" "https://registry.npmjs.org/gatsby-theme-ceteicean/-/gatsby-theme-ceteicean-3.2.0.tgz"
+  "version" "3.2.0"
   dependencies:
     "@types/jsdom" "^16.2.13"
     "gatsby" "^4.12.1"
