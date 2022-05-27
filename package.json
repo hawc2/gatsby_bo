@@ -38,7 +38,7 @@
     "typescript": "^4.2.4"
   },
   "scripts": {
-    "build": ""build": "cross-env BASEPATH=/gatsby_bo gatsby build --prefix-paths",
+    "build": "cross-env BASEPATH=/gatsby_bo gatsby build --prefix-paths",
     "clean": "gatsby clean",
     "develop": "gatsby develop",
     "metadata": "node scripts/metadata.js",
