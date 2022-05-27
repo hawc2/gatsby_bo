@@ -1,4 +1,4 @@
-const basePath = "process.env.BASEPATH"
+const basePath = "gatsby_bo"
 const title = "The Beggars Opera"
 const htmlTitle = "The Beggars Opera"
 
