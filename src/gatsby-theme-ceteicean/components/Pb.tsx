@@ -60,7 +60,7 @@ const Pb: PbBehavior = ({teiNode, facs}: TEIProps) => {
   }))
 
   const [expanded, setExpanded] = React.useState(false)
-  const handleChange = (event: React.SyntheticEvent, isExpanded: boolean) => {
+  const handleChange = (_event: React.SyntheticEvent, isExpanded: boolean) => {
     setExpanded(isExpanded)
   }
 

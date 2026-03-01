@@ -38,29 +38,6 @@ module.exports = {
         orcid: ""
       }
     ],
-    authors_struct: [
-      {
-        first: "Steve",
-        middle: "",
-        last: "Newman",
-        affiliations: ["Temple University"],
-        orcid: ""
-      },
-      {
-        first: "Fred",
-        middle: "",
-        last: "Rowland",
-        affiliations: ["Temple University"],
-        orcid: ""
-      },
-      {
-        first: "Alex",
-        middle: "",
-        last: "Wermer-Colan",
-        affiliations: ["Temple University"],
-        orcid: ""
-      }
-    ],
     repository: "https://github.com/hawc2/beggars-opera",
     menuLinks: [
       {
@@ -103,14 +80,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `introduction`,
-        path: `src/introduction`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `background`,
+        name: `content`,
         path: `src/introduction`,
       },
     },

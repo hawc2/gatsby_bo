@@ -17,14 +17,8 @@ interface Links {
 
 interface Props {
   location: string
-  siteTitle: string
   menuLinks: Links[]
-  doi: string
   wideHeader?: boolean
-  issue: {
-    short: string
-    path: string
-  }
 }
 
 // Styled components

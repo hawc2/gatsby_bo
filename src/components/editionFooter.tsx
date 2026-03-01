@@ -29,7 +29,7 @@ const EditionFooter = ({children, repository}: Props) => {
   const [stopFab, setStopFab] = React.useState(false)
 
   React.useEffect(() => {
-    window.addEventListener('scroll', () => {
+    const handleScroll = () => {
       const scrollPosition = window.pageYOffset
       const windowSize     = window.innerHeight
       const bodyHeight     = document.body.offsetHeight
@@ -42,7 +42,9 @@ const EditionFooter = ({children, repository}: Props) => {
       } else {
         setStopFab(false)
       }
-    })
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [footerRef])
 
   const [open, setOpen] = React.useState(false)
